@@ -24,6 +24,7 @@ module AssetsContainer
     config.assets.precompile += %w(
       *.png *.jpg *.jpeg *.gif *.eot *.svg *.ttf *.woff *.map
       malmo.js
+      malmo_s.js
       malmo.css
       malmo_without_jquery.js
       masthead_standalone.css
