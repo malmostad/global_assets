@@ -14,7 +14,7 @@ Apart from the common assets consumed by all applications, each application cont
 For more information, contact webbteamet@malmo.se.
 
 ## How to Use the Assets
-Instructions for how you use the global assets in your application is documented in City of Malmö's [Web Application Guidelines](http://malmostad.github.io/wag/).
+Instructions for how you use the global assets in your application is documented in City of Malmö's [Web Application Guidelines](https://malmostad.github.io/wag/).
 
 ## Dependencies for Development and Deployment
 * Ruby 2.0
