@@ -1,7 +1,7 @@
 default: &default
-  sv_base_url: http://malmo.se/
-  site_search_url: http://sok.malmo.se
-  site_search_ac_url: http://sok.malmo.se/search/autocomplete
+  sv_base_url: https://malmo.se/
+  site_search_url: https://sok.malmo.se
+  site_search_ac_url: https://sok.malmo.se/search/autocomplete
   asset_host: //assets.malmo.se/external/v4/
   ua_account: 'UA-331614-1'
 
@@ -14,7 +14,7 @@ development: &development
 
 staging:
   <<: *default
-  sv_base_url: http://www.test.malmo.se/
+  sv_base_url: https://www.test.malmo.se/
   asset_host: //assets.malmo.se/external/v4-staging/
   ua_account: 'UA-19475063-1'
 
