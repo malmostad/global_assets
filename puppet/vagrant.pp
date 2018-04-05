@@ -26,10 +26,3 @@ class { '::mcommons::ruby':
 class { 'mcommons::ruby::bundle_install': }
 class { 'mcommons::ruby::rails': }
 class { 'mcommons::ruby::rspec_deps': }
-
-package {[
-   'npm',
- ]:
- ensure  => installed,
- require => Exec['apt-get-update'],
-}

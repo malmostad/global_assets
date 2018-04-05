@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.7.1'
+gem 'rails', '4.2.10.0'
 gem 'jquery-rails', '~> 4.0.5'
 gem 'rack-contrib'
 
