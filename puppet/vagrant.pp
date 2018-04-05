@@ -10,10 +10,26 @@ $app_home       = '/vagrant'
 
 class { '::mcommons': }
 
+#
+class { '::mcommons::mysql':
+  db_password      => '',
+  db_root_password => '',
+  create_test_db   => false,
+  daily_backup     => false,
+  ruby_enable      => true,
+}
+
 class { '::mcommons::ruby':
-  version => '2.3.3',
+  version => '2.3.7',
 }
 
 class { 'mcommons::ruby::bundle_install': }
 class { 'mcommons::ruby::rails': }
 class { 'mcommons::ruby::rspec_deps': }
+
+package {[
+   'npm',
+ ]:
+ ensure  => installed,
+ require => Exec['apt-get-update'],
+}

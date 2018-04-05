@@ -17,10 +17,8 @@ For more information, contact webbteamet@malmo.se.
 Instructions for how you use the global assets in your application is documented in City of Malmö's [Web Application Guidelines](https://malmostad.github.io/wag/).
 
 ## Dependencies for Development and Deployment
-* Ruby 2.0
-* Rubygems and Bundler
-* [Grunt](http://gruntjs.com/) for Grunticon SVG and PNG management
-* [Bower](http://bower.io) to update the [`shared_assets`](https://github.com/malmostad/shared_assets)
+* [Vagrant](https://www.vagrantup.com/)
+* A Vagrant compatible virtual machine. VirtualBox tested.
 
 ## Dependencies for Asset Hosting
 A web server optimized to serve static files. Ruby is not needed on the server.
@@ -47,12 +45,25 @@ Log in to the Vagrant box as the `vagrant` user and start the application in the
 ```shell
 $ vagrant ssh
 $ cd /vagrant
-$ rails s -b 0.0.0.0
+```
+
+Run some post install commands currently missing from the provisioning packages:
+
+```shell
+$ sudo apt-get install npm
+$ sudo npm install -g grunt-cli
+$ npm install
+```
+
+Start a local asset server:
+
+```shell
+$ bundle exec rails s -b 0.0.0.0
 ```
 
 Point another local web applications link to the global assets at http://127.0.0.1:3039. Editing of the project files on your host system will be reflected when you hit reload in your browser.
 
-When you run the `vagrant up` command for the first time it creates an Ubuntu 14.04 based Vagrant box with a ready-to-use development environment for the application. This will take some time. Vagrant will launch fast after the first run.
+When you run the `vagrant up` command for the first time it creates an Ubuntu 16.04 based Vagrant box with a ready-to-use development environment for the application. This will take some time. Vagrant will launch fast after the first run.
 
 If you get port conflicts in your host system, change `forwarded_port` in the `Vagrantfile` You might also want to edit the value for `vm.hostname` and `puppet.facter` in the same file or do a mapping `localhost` mapping in your hosts `host` file to reflect that value.
 
@@ -78,14 +89,9 @@ The compression levels for CSS and Javascript files are configured in `config/en
 ## Build Icons
 [Grunticon](https://github.com/filamentgroup/grunticon) is used to compile SVG icons into CSS files with PNG fallbacks. Master SVG files is in `masters/icons` and the output goes to `app/assets/icons`. To setup Grunticon, make sure you have [Grunt](http://gruntjs.com/) installed and then run the following command in the project root:
 
-```
-npm install -g grunt-cli
-npm install
-```
-
 To rebuild all icons, run:
 ```
-grunt
+$ grunt
 ```
 
 A preview of the icons is generated in `app/assets/icons/preview.html`.
