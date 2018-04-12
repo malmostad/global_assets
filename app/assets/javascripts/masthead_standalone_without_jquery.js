@@ -12,4 +12,3 @@
 //= require consent
 //= require analytics
 //= require analytics_shared
-//= require siteimprove
