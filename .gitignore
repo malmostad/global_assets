@@ -10,6 +10,8 @@ _site
 /dist
 .sass-cache
 /.vagrant
+config/database.yml
+config/secrets.yml
 
 /app/assets/javascripts/footer_content.js
 /app/assets/javascripts/masthead_content.js
