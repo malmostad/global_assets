@@ -19,6 +19,8 @@ if (muaid) {
   });
 }
 
+ga('set', 'anonymizeIP', true);
+
 jQuery(function($) {
   ga('require', 'linkid');
   if (typeof currentURI === "string") {
