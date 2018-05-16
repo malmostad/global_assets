@@ -24,9 +24,13 @@ ga('set', 'anonymizeIP', true);
 jQuery(function($) {
   ga('require', 'linkid');
   if (typeof currentURI === "string") {
-    ga('send', 'pageview', currentURI + document.location.search);
+    ga('send', 'pageview', currentURI + document.location.search, {
+      'anonymizeIp': true
+    });
   } else {
-    ga('send', 'pageview');
+    ga('send', 'pageview', {
+      'anonymizeIp': true
+    });
   }
 });
 
