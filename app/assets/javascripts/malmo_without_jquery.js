@@ -27,8 +27,6 @@
 //= require ios-orientationchange-fix
 //= require jquery.cycle2.min.js
 //= require jquery.cycle2.swipe.min.js
-//= require survey_markup
-//= require survey
 //= require legacy
 
 $(function() {
