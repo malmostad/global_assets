@@ -14,18 +14,7 @@
     font-family: $sans-serif;
   }
 
-  // styling of the Brightcove player
-  .vjs-big-play-button {
-    position: absolute;
-    width: 120px;
-    height: 92px;
-    top: -18px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-  }
-
+  
   .vjs-big-play-button::before {
     margin: 36px auto;
   }
