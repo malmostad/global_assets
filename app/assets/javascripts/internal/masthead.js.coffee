@@ -78,8 +78,8 @@ jQuery ($) ->
     $mastheadSearch.find("div").addClass("input-append input-prepend")
 
     # Close on click outside the searchbox
-    $(document).on 'click.searchForm', (event) ->
-      hideSearch() unless $(event.target).closest("#masthead-search, #nav-search-trigger").length
+    $(document).one 'mousedown', (event) ->
+        hideSearch() unless $(event.target).closest("#masthead-search, #nav-search-trigger").length
 
   # Bind escape key to hide form
   $mastheadSearch.focusin ->
