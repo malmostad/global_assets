@@ -1,5 +1,5 @@
 <header id="malmo-masthead" role="banner" class="mf-v4">
-  <div class="nav-logo"><a href="<%= APP_CONFIG['dashboard_base_url'] %>">Komin</a></div>
+  <div class="nav-logo"><a href="https://cityofmalmo.omniacloud.net/start">Komin</a></div>
 
   <ul id="nav-triggers">
     <li id="nav-menu-trigger"><a href="#">Meny <span class="m-icon-menu-0"></span></a></li>
@@ -9,12 +9,14 @@
   <nav class="masthead-main">
     <ul>
       <li id="nav-dashboard"><a href="<%= APP_CONFIG['dashboard_base_url'] %>">Min sida</a></li>
-      <li id="nav-my-department">
-        <a href="<%= APP_CONFIG['dashboard_base_url'] %>my_roles">Min förvaltning</a>
-      </li>
-      <li id="nav-my-workingfield">
-        <a href="<%= APP_CONFIG['dashboard_base_url'] %>my_roles">Mitt arbetsfält</a>
-      </li>
+      <% if false %>
+        <li id="nav-my-department">
+            <a href="<%= APP_CONFIG['dashboard_base_url'] %>my_roles">Min förvaltning</a>
+        </li>
+        <li id="nav-my-workingfield">
+            <a href="<%= APP_CONFIG['dashboard_base_url'] %>my_roles">Mitt arbetsfält</a>
+        </li>
+      <% end %>
       <li id="nav-our-organization"><a href="<%= APP_CONFIG['sv_base_url'] %>Var-kommun">Vår kommun</a></li>
       <li id="nav-hrutan"><a href="<%= APP_CONFIG['sv_base_url'] %>minanstallning">Min anställning</a></li>
       <li id="nav-more" class="dropdown">
