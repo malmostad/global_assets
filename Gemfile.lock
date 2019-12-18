@@ -90,7 +90,7 @@ GEM
       net-ssh (>= 2.6.5)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
-    rack (1.6.9)
+    rack (1.6.12)
     rack-contrib (1.4.0)
       git-version-bump (~> 0.15)
       rack (~> 1.4)
