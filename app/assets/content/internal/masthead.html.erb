@@ -1,5 +1,5 @@
 <header id="malmo-masthead" role="banner" class="mf-v4">
-  <div class="nav-logo"><a href="https://cityofmalmo.omniacloud.net/start">Komin</a></div>
+  <div class="nav-logo"><a href="https://cityofmalmo.omniacloud.net">Komin</a></div>
 
   <ul id="nav-triggers">
     <li id="nav-menu-trigger"><a href="#">Meny <span class="m-icon-menu-0"></span></a></li>
@@ -8,28 +8,12 @@
 
   <nav class="masthead-main">
     <ul>
-      <li id="nav-dashboard"><a href="<%= APP_CONFIG['dashboard_base_url'] %>">Min sida</a></li>
+      <li id="nav-our-organization"><a href="<%= APP_CONFIG['sv_base_url'] %>Var-kommun">Vår kommun</a></li>
       <% if false %>
         <li id="nav-my-department">
-            <a href="<%= APP_CONFIG['dashboard_base_url'] %>my_roles">Min förvaltning</a>
-        </li>
-        <li id="nav-my-workingfield">
-            <a href="<%= APP_CONFIG['dashboard_base_url'] %>my_roles">Mitt arbetsfält</a>
+            <a href="https://komin.test.malmo.se/forvaltningar.html">Min förvaltning</a>
         </li>
       <% end %>
-      <li id="nav-our-organization"><a href="<%= APP_CONFIG['sv_base_url'] %>Var-kommun">Vår kommun</a></li>
-      <li id="nav-hrutan"><a href="<%= APP_CONFIG['sv_base_url'] %>minanstallning">Min anställning</a></li>
-      <li id="nav-more" class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="mathead-more">Mer <span class="m-icon-caret-down-0"></span></a>
-        <ul class="dropdown-menu" aria-labelledby="mathead-more" aria-hidden="true" role="menu">
-          <li><a role="menuitem" tabindex="-1" href="<%= APP_CONFIG['dashboard_base_url'] %>my_profile">Min profil</a></li>
-          <li><a role="menuitem" tabindex="-1" href="<%= APP_CONFIG['sv_base_url'] %>blogg">Blogg</a></li>
-          <li><a role="menuitem" tabindex="-1" href="<%= APP_CONFIG['sv_base_url'] %>forum">Forum</a></li>
-          <li><a role="menuitem" tabindex="-1" href="<%= APP_CONFIG['sv_base_url'] %>nyheter">Nyheter</a></li>
-          <li><a role="menuitem" tabindex="-1" href="<%= APP_CONFIG['sv_base_url'] %>webbvideo">Webbvideo</a></li>
-          <li><a role="menuitem" tabindex="-1" href="<%= APP_CONFIG['sv_base_url'] %>wiki">Wiki</a></li>
-        </ul>
-      </li>
     </ul>
   </nav>
 
@@ -62,9 +46,6 @@
     <ul>
       <li class="map">
         <a href="<%= APP_CONFIG['sv_base_url'] %>karta" title="Karta" alt="Karta"><span class="m-icon-map-marker-0"></span></a>
-      </li>
-      <li class="phone">
-        <a href="https://komin.malmo.se/telefonisystem1" title="Styr telefonen" alt="Styr telefonen"><span class="m-icon-phone-big-0"></span></a>
       </li>
     </ul>
   </nav>
