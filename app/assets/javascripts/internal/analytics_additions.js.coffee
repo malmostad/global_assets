@@ -22,7 +22,7 @@ jQuery ($) ->
     $a = $(@);
 
     # Special case for department & workingfield dropdowns
-    if $a.parents("#nav-my-department").length then text = "Min förvaltning"
+    if $a.parents("#nav-my-department").length then text = "Förvaltningar"
     else if $a.parents("#nav-my-workingfield").length then text = "Mitt arbetsfält"
     else if $a.parents("#masthead-others").length then text = $a.attr("title")
     else text = $a.text()

@@ -45,7 +45,7 @@ jQuery ($) ->
   $.cookie.json = true
 
   profile = $.cookie(msettings.myprofileName) || {}
-  if profile.departments then hijackNav('#nav-my-department', profile.departments, 'Mina förvaltningar')
+  # if profile.departments then hijackNav('#nav-my-department', profile.departments, 'Mina förvaltningar')
   if profile.workingfields then hijackNav('#nav-my-workingfield', profile.workingfields, 'Mina arbetsfält')
 
   $("#nav-menu-trigger a").click (event) ->
