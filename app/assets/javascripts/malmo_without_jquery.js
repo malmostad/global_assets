@@ -1,5 +1,6 @@
 //= require settings
 //= require analytics
+//= require minsida_redirect
 //= require analytics_shared
 //= require analytics_additions
 //= require grunticon.loader
