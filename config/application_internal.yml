@@ -1,6 +1,6 @@
 default: &default
   sv_base_url: https://komin.malmo.se/
-  site_search_url: //kominsok.malmo.se/
+  site_search_url: /Var-kommun/Sok-i-gamla-komin.html
   site_search_ac_url: //kominsok.malmo.se/search/autocomplete
   asset_host: //assets.malmo.se/internal/v4/
   ua_account: 'UA-1659147-1'
@@ -16,11 +16,12 @@ development: &development
 staging:
   <<: *default
   sv_base_url: https://komin.test.malmo.se/
+  site_search_url: https://komin.test.malmo.se/Var-kommun/Sok-i-gamla-komin.html
   asset_host: //assets.malmo.se/internal/v4-staging/
   ua_account: 'UA-19475064-1'
   dashboard_base_url: "https://minsidatest.malmo.se/"
 
 production:
   <<: *default
-  site_search_url: //kominsok.malmo.se/
+  site_search_url: https://komin.malmo.se/Var-kommun/Sok-i-gamla-komin.html
   site_search_ac_url: //kominsok.malmo.se/search/autocomplete
