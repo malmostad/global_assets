@@ -10,7 +10,7 @@
     window.location,
     'minsida.malmo.se',
     'https://komin.malmo.se/',
-    [ 'activities', 'api_apps', 'feeds', 'group_contacts', 'languages',
+    [ 'activities', 'api', 'api_apps', 'feeds', 'group_contacts', 'languages',
       'roles', 'shortcuts', 'skills', 'statistics', 'users' ]
 ));
 
