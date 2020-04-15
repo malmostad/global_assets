@@ -3,11 +3,11 @@
     <a href="<%= APP_CONFIG['sv_base_url']%>"></a>
   </div>
 
-  <div class="dropdown" id="main-nav">
-    <button type="button" data-toggle="dropdown" class="m-icon-menu-0">
+  <nav class="dropdown" id="main-nav">
+    <button type="button" data-toggle="dropdown" class="m-icon-menu-0" aria-expanded="false">
       <span class="text">Meny</span>
     </button>
-    <ul class="dropdown-menu" role="menu" aria-hidden="true" aria-labelledby="nav-trigger">
+    <ul class="dropdown-menu" role="menu" aria-hidden="true" aria-labelledby="main-nav">
         <li>
             <a role="menuitem" href="https://sjalvservice.malmo.se/">Självservice</a>
         </li>
@@ -42,17 +42,17 @@
             <a role="menuitem" href="<%= APP_CONFIG['sv_base_url']%>Uppleva-och-gora.html">Uppleva och göra</a>
         </li>      
     </ul>
-  </div> 
+  </nav> 
   
   <button type="button" class="m-icon-search-0" title="Sök på malmo.se" id="search-trigger"></button>
 
   <div id="masthead-search" class="mf-v4">
     <form action="<%= APP_CONFIG['site_search_url'] %>" method="get">
       <div class="input-group input-group-sm">
-        <input name="q" class="q form-control" placeholder="Sök på malmo.se" type="text" autocapitalize="off" autocorrect="off" data-autocomplete-url="<%= APP_CONFIG['site_search_ac_url'] %>" data-images-url="<%= APP_CONFIG['site_search_url'] %>" data-caller="Masthead"/>
+        <input name="q" class="q form-control" placeholder="Sök på malmo.se" type="text" autocapitalize="off" data-autocomplete-url="<%= APP_CONFIG['site_search_ac_url'] %>" data-images-url="<%= APP_CONFIG['site_search_url'] %>" data-caller="Masthead"/>
         <span class="input-group-btn">
           <input name="utf8" type="hidden" value="&#x2713;"/>
-          <input class="btn btn-default" name="" type="submit" value="Sök"/>
+          <input class="btn btn-default" name="search-btn" type="submit" value="Sök"/>
         </span>
       </div>
     </form>
