@@ -49,7 +49,13 @@
   <div id="masthead-search" class="mf-v4">
     <form action="<%= APP_CONFIG['site_search_url'] %>" method="get">
       <div class="input-group input-group-sm">
-        <input name="q" class="q form-control" placeholder="Sök på malmo.se" type="text" autocapitalize="off" data-autocomplete-url="<%= APP_CONFIG['site_search_ac_url'] %>" data-images-url="<%= APP_CONFIG['site_search_url'] %>" data-caller="Masthead"/>
+        <label class="visuallyhidden" for="search-field">Sök på malmo.se</label>
+                <input name="q" class="q form-control" placeholder="Sök på malmo.se" type="text"
+                       autocapitalize="off"
+                       aria-label="Sök på malmo.se"
+                       data-autocomplete-url="https://sok.malmo.se/search/autocomplete"
+                       data-images-url="https://sok.malmo.se" data-caller="Masthead"
+                       id="search-field">
         <span class="input-group-btn">
           <input name="utf8" type="hidden" value="&#x2713;"/>
           <input class="btn btn-default" name="search-btn" type="submit" value="Sök"/>
