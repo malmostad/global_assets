@@ -11,7 +11,7 @@
     'minsida.malmo.se',
     'https://komin.malmo.se/',
     [ 'activities', 'api', 'api_apps', 'feeds', 'group_contacts', 'languages',
-      'roles', 'shortcuts', 'skills', 'statistics', 'users' ]
+      'login', 'roles', 'shortcuts', 'skills', 'statistics', 'users' ]
 ));
 
 // Use these for testing:
