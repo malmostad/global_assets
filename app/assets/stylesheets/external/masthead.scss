@@ -11,13 +11,17 @@
     position: absolute;
     top: emize(5);
     left: .6em;
-    background: url('external/logo-x1.png') no-repeat;
-    @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
-      background-image: url('external/logo-x2.png');
-    }
-    background-size: 178px 27px;
+    //background: url('external/logo-x1.png') no-repeat;
+    //@media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+    //  background-image: url('external/logo-x2.png');
+    //}
+    //background-size: 178px 27px;
     height: 30px;
     width: 180px;
+  }
+
+  .nav-logo a img.logo {
+    width: 178px;
   }
 
   #main-nav {
