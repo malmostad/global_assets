@@ -6,6 +6,22 @@
   left: 0;
   right: 0;
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  .nav-right-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
 
   .nav-logo a {
     position: absolute;
@@ -95,7 +111,6 @@
   #search-trigger {
     font-size: 1em;
     display: block;
-    float: right;
     width: emize(40);
     height: emize(30);
     padding: 0;
@@ -114,7 +129,6 @@
   }
 
   #masthead-search {
-    float: right;
     margin: emize(6) 1em 0 0;
     width: 20em;
     input[type=text] {
@@ -162,7 +176,7 @@
 // Don't enable the hover effect for touch devices
 body:not(.touch) #main-nav ul li {
   a:hover, a:active, a:focus {
-    background-color: $background-dark !important;
+    background-color: #000 !important;
     color: #fff !important;
   }
 }
