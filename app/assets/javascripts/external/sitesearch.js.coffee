@@ -55,9 +55,10 @@ jQuery ($) ->
       .appendTo ul
 
   suggestionItem = (ul, item) ->
+    hitOrHits = if item.nHits > 1 then 'sökträffar' else 'sökträff'
     $("<li>")
       .addClass('suggestion')
-      .append("<a><span class='hits'>#{item.nHits}</span>#{item.suggestionHighlighted}</a>")
+      .append("<a title='#{item.label}, #{item.nHits} "+hitOrHits+"'><span class='hits'>#{item.nHits}</span>#{item.suggestionHighlighted}</a>")
       .appendTo ul
 
   fullSearchItem = ($widget, term) ->
