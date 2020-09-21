@@ -13,7 +13,7 @@
     <button type="button" data-toggle="dropdown" class="m-icon-menu-0" aria-expanded="false">
       <span class="text">Meny</span>
     </button>
-    <ul class="dropdown-menu" role="menu" aria-hidden="true" aria-labelledby="main-nav">
+    <ul class="dropdown-menu" role="menu" aria-labelledby="main-nav">
         <li>
             <a role="menuitem" href="https://sjalvservice.malmo.se/">Självservice</a>
         </li>
@@ -55,10 +55,12 @@
   <div id="masthead-search" class="mf-v4">
     <form action="<%= APP_CONFIG['site_search_url'] %>" method="get" role="search">
       <div class="input-group input-group-sm">
-        <label class="visuallyhidden" for="search-field">Sök på malmo.se</label>
+        <label class="visuallyhidden" for="search-field">Sök på malmö.se, sökförslag kommer att visas nedanför när du matat in 2 bokstäver.</label>
                 <input name="q" class="q form-control" placeholder="Sök på malmo.se" type="text"
                        autocapitalize="off"
                        aria-label="Sök på malmo.se"
+                       aria-haspopup="true"
+                       aria-autocomplete="both"
                        data-autocomplete-url="https://sok.malmo.se/search/autocomplete"
                        data-images-url="https://sok.malmo.se" data-caller="Masthead"
                        id="search-field">
