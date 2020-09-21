@@ -51,7 +51,7 @@ jQuery ($) ->
     $img = $("<img>").attr("src", imagesUrl + item.images.mini)
     $("<li>")
       .addClass('recommendation')
-      .append($("<a><p>#{item.name}</p></a>").prepend($img))
+      .append($("<a title='Gå direkt till: #{item.name}'><p>#{item.name}</p></a>").prepend($img))
       .appendTo ul
 
   suggestionItem = (ul, item) ->
