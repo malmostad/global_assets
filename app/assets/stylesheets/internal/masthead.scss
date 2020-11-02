@@ -6,7 +6,7 @@ $collapse-at: 65em;
   left: 0;
   right: 0;
   z-index: 100;
-  background-color: $masthead-background;
+  background-color: #000;
   min-width: $collapse-at;
   min-height: emize(43);
 
@@ -17,6 +17,18 @@ $collapse-at: 65em;
   }
   a:hover {
     text-decoration: none;
+  }
+
+  .nav-logo a {
+    position: absolute;
+    top: emize(5);
+    left: .6em;
+    height: 30px;
+    width: 180px;
+  }
+
+  .nav-logo a img.logo {
+    width: 178px;
   }
 
   #nav-triggers {
@@ -251,29 +263,29 @@ $collapse-at: 65em;
     }
   }
 
-  .nav-logo {
-    display: block;
-    float: left;
-    padding: 0 0 0 .5em;
-    font-family: $sans-serif;
-    line-height: 1;
-    background: url("internal/logo-x1.png") 10px 5px no-repeat;
-    background-size: 24px;
-    a, span {
-      display: block;
-      color: $masthead-color-highlight;
-      @include box-sizing(border-box);
-      padding: emize(6) emize(12) emize(6) emize(24);
-      border: none;
-      font-weight: bold;
-      font-size: emize(23);
-      line-height: 1;
-      text-transform: uppercase;
-    }
-    @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
-      background-image: url("internal/logo-x2.png");
-    }
-  }
+  // .nav-logo {
+  //   display: block;
+  //   float: left;
+  //   padding: 0 0 0 .5em;
+  //   font-family: $sans-serif;
+  //   line-height: 1;
+  //   background: url("internal/logo-x1.png") 10px 5px no-repeat;
+  //   background-size: 24px;
+  //   a, span {
+  //     display: block;
+  //     color: $masthead-color-highlight;
+  //     @include box-sizing(border-box);
+  //     padding: emize(6) emize(12) emize(6) emize(24);
+  //     border: none;
+  //     font-weight: bold;
+  //     font-size: emize(23);
+  //     line-height: 1;
+  //     text-transform: uppercase;
+  //   }
+  //   @media (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+  //     background-image: url("internal/logo-x2.png");
+  //   }
+  // }
 }
 
 // Add one of the class selectors to the body

@@ -1,47 +1,10 @@
 <header id="malmo-masthead" role="banner" class="mf-v4">
-  <div class="nav-logo"><a href="https://cityofmalmo.omniacloud.net">Komin</a></div>
-
-  <ul id="nav-triggers">
-    <li id="nav-menu-trigger"><a href="#">Meny <span class="m-icon-menu-0"></span></a></li>
-    <li id="nav-search-trigger"><a href="<%= APP_CONFIG['site_search_url'] %>">Sök <span class="m-icon-search-0"></span></a></li>
-  </ul>
-
-  <nav class="masthead-main">
-    <ul>
-      <li id="nav-our-organization"><a href="<%= APP_CONFIG['sv_base_url'] %>Var-kommun">Vår kommun</a></li>
-      <li id="nav-my-department">
-        <a href="<%= APP_CONFIG['sv_base_url'] %>forvaltningar.html">Förvaltningar</a>
-      </li>
-    </ul>
-  </nav>
-
-  <div id="masthead-search">
-    <form action="<%= APP_CONFIG['site_search_url'] %>"
-          autocomplete="off"
-          id="masthead-search-intranet">
-      <span class="m-icon-search"></span>
-      <div class="input-group">
-        <label for="masthead-q-komin" class="input-group-addon m-icon-file-text-o"></label>
-        <input name="query"
-               id="masthead-q-komin"
-               class="q form-control input-sm"
-               autocapitalize="off"
-               autocorrect="off"
-               autocomplete="off"
-               placeholder="Ett eller flera sökord" type="text" />
-        <span class="input-group-btn">
-          <input class="btn btn-default" type="submit" value="Sök på Komin"/>
-        </span>
-      </div>
-    </form>
-
+  <div class="nav-logo">
+       <a href="https://cityofmalmo.omniacloud.net/"
+          title="Till startsidan malmo.se">
+           <img class="logo"
+                src="<%= APP_CONFIG['asset_host']%>external/logo-x2-transp.png"
+                alt="Malmö stads logotyp">
+       </a>
   </div>
-
-  <nav id="masthead-others">
-    <ul>
-      <li class="map">
-        <a href="<%= APP_CONFIG['sv_base_url'] %>karta" title="Karta" alt="Karta"><span class="m-icon-map-marker-0"></span></a>
-      </li>
-    </ul>
-  </nav>
 </header>
