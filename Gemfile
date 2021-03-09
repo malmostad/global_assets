@@ -8,7 +8,7 @@ gem 'sass-rails', '~> 5.0.6'
 gem 'uglifier', '~> 3.0.3'
 gem 'coffee-rails', '~> 4.1.1'
 
-gem 'bootstrap-sass', '~> 3.3.6' # Note: only a small subset of Bootstrap is used, see the files bootstrap-custom[scss|js]
+gem 'bootstrap-sass', '~> 3.4.1' # Note: only a small subset of Bootstrap is used, see the files bootstrap-custom[scss|js]
 gem 'bootstrap-datepicker-rails', '1.5.0'
 
 gem 'capistrano', '~> 2.15.9'
