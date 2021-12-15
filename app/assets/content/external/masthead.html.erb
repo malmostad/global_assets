@@ -12,26 +12,6 @@
   <div class="nav-right-wrapper">
     <button type="button" class="m-icon-search-0" title="Sök på malmo.se" id="search-trigger"></button>
 
-    <div id="masthead-search" class="mf-v4">
-      <form action="<%= APP_CONFIG['site_search_url'] %>" method="get" role="search">
-        <div class="input-group input-group-sm">
-          <label class="visuallyhidden" for="search-field">Sök på malmö.se, sökförslag kommer att visas nedanför när du matat in 2 bokstäver.</label>
-                  <input name="q" class="q form-control" placeholder="Sök på malmo.se" type="text"
-                        autocapitalize="off"
-                        aria-label="Sök på malmo.se"
-                        aria-haspopup="true"
-                        aria-autocomplete="both"
-                        data-autocomplete-url="https://sok.malmo.se/search/autocomplete"
-                        data-images-url="https://sok.malmo.se" data-caller="Masthead"
-                        id="search-field">
-          <span class="input-group-btn">
-            <input name="utf8" type="hidden" value="&#x2713;"/>
-            <input class="btn btn-default" name="search-btn" type="submit" value="Sök"/>
-          </span>
-        </div>
-      </form>
-    </div>
-
     <nav class="dropdown" id="main-nav" aria-label="Meny">
       <button type="button" data-toggle="dropdown" class="m-icon-menu-0" aria-expanded="false">
         <span class="text">Meny</span>
